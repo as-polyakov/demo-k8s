@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:latest
 #FROM plugins/base:linux-amd64
 
   #LABEL maintainer="Adon988 <adon988@gmail.com>" \
