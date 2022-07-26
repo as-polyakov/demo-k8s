@@ -8,6 +8,7 @@ FROM plugins/base:linux-amd64
   EXPOSE 8080
 
   COPY release/demo-k8s /bin/
+  RUN chmod 654 /bin/demo-k8s
 
   ENTRYPOINT ["/bin/demo-k8s"]
 
