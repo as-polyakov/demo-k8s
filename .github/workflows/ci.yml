@@ -6,7 +6,10 @@ on:
       - main
     tags:
       - 'v*'
-
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  
 jobs:
   docker:
     name: Docker build & push
