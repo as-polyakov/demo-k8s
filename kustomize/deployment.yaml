@@ -33,7 +33,7 @@ kind: Service
 metadata:
   name: demo-k8s
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: demo-k8s
   ports:
