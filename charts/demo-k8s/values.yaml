@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: r.cfcr.io/datarobot/default/demo-k8s
+  repository: 502474778139.dkr.ecr.us-east-1.amazonaws.com/codefresh-demo/as-polyakov/demo-k8s
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
