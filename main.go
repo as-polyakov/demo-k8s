@@ -11,5 +11,5 @@ func hello(w http.ResponseWriter, req *http.Request) {
 
 func main() {
 	http.HandleFunc("/hello", hello)
-	http.ListenAndServe(":8090", nil)
+	http.ListenAndServe(":80", nil)
 }
