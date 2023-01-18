@@ -7,7 +7,7 @@ import (
 
 func hello(w http.ResponseWriter, req *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	fmt.Fprintf(w, "hello\n")
+	fmt.Fprintf(w, "hello2\n")
 }
 func liveness(w http.ResponseWriter, req *http.Request) {
 	w.WriteHeader(http.StatusOK)
