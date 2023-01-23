@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image: <+artifact.image>
-  repositoryy: <+artifact.url>
+  repositoryy: ${artifact.metadata.url}
   tag: <+artifact.tag>
   pullPolicy: Always
 imagePullSecrets: [{name: regcred}]
