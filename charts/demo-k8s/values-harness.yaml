@@ -4,6 +4,9 @@
 
 replicaCount: 1
 image: <+artifact.image>
+  repositoryy: <+artifact.source.registryUrl>
+  tag: <+artifact.tag>
+  pullPolicy: Always
 imagePullSecrets: [{name: regcred}]
 nameOverride: ""
 fullnameOverride: ""
