@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image: <+artifact.image>
-  repositoryy: <+.metadata.url>
+  repositoryy: 502474778139.dkr.ecr.us-east-1.amazonaws.com
   tag: <+artifact.tag>
   pullPolicy: Always
 imagePullSecrets: [{name: regcred}]
