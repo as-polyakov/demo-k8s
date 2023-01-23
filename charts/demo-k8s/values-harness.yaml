@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-image: <+artifact.image>
-  repository: 502474778139.dkr.ecr.us-east-1.amazonaws.com
+image: 
+  repository: 502474778139.dkr.ecr.us-east-1.amazonaws.com/<+artifact.image>
   tag: <+artifact.tag>
   pullPolicy: Always
 imagePullSecrets: [{name: regcred}]
