@@ -47,6 +47,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 Selector labels
 */}}
 {{- define "demo-k8s.selectorLabels" -}}
+harness.io/release: {{ .Release.Name }}
 app.kubernetes.io/name: {{ include "demo-k8s.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
