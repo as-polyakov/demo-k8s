@@ -18,4 +18,5 @@ func main() {
 	http.HandleFunc("/hello", hello)
 	http.HandleFunc("/", liveness)
 	http.ListenAndServe(":80", nil)
+	fmt.Println("I am a new version")
 }
