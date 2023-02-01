@@ -17,6 +17,6 @@ func liveness(w http.ResponseWriter, req *http.Request) {
 func main() {
 	http.HandleFunc("/hello", hello)
 	http.HandleFunc("/", liveness)
-	fmt.Println("I am a new versioni 4")
+	fmt.Println("I am a new versioni 5")
 	http.ListenAndServe(":80", nil)
 }
