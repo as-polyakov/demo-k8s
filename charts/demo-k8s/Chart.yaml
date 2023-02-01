@@ -1,6 +1,6 @@
 apiVersion: v2
 name: demo-k8s
-description: demo-k8s helm chart
+description: demo-k8s helm chart - now with gitops support
 
 # A chart can be either an 'application' or a 'library' chart.
 #
