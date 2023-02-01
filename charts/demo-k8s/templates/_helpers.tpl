@@ -36,6 +36,7 @@ Common labels
 {{- define "demo-k8s.labels" -}}
 helm.sh/chart: {{ include "demo-k8s.chart" . }}
 release: {{ .Release.Name }}
+harness.io/release: {{ .Release.Name }} 
 {{ include "demo-k8s.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
@@ -47,7 +48,8 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 Selector labels
 */}}
 {{- define "demo-k8s.selectorLabels" -}}
-harness.io/release: {{ .Release.Name }}
+release: {{ .Release.Name }}
+harness.io/release: {{ .Release.Name }} 
 app.kubernetes.io/name: {{ include "demo-k8s.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
