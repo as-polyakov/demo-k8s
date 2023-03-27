@@ -1,5 +1,7 @@
 #variable "global_access_key" {type=string}  
 #variable "global_secret_key" {type=string}  
+
+variable "customer_bucket_name" {type=string}
   
 variable "env" {  
     default= "test"  
@@ -11,6 +13,11 @@ provider "aws" {
 }  
   
 resource "aws_s3_bucket" "bucket" {  
-  bucket = "dmaic-appset-bucket"  
+  bucket =  var.customer_bucket_name
 }  
   
+terraform {
+backend "s3" {
+
+  }
+}
