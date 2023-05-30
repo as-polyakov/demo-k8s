@@ -4,7 +4,7 @@
 
 replicaCount: 1
 image: 
-  repository: docker.io/<+artifact.imagePath>
+  repository: datacyborg.jfrog.io/antonpolyakov-docker/<+artifact.imagePath>
   tag: <+artifact.tag>
   pullPolicy: Always
 imagePullSecrets: [{name: regcred}]
